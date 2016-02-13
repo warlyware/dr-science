@@ -22,7 +22,14 @@
             </div>
         </div>
 
+        <div id="audio-slider" ng-if="!audio.paused">
+            <md-slider type="range" step="0.01" class="flex" min="0" max="1" ng-model="audio.progress" class=""></md-slider>
+        </div>
+
         <div class="container">
+            <md-content>
+
+            </md-content>
             <div class="layout-column">
                 <a href="http://youtu.be/wBdGkUik_sg" target="_blank">
                     <div id="fp-link-1" class="frontpage layout-row layout-align-center-center md-padding">

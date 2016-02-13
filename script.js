@@ -1,11 +1,13 @@
 'strict mode';
 
-angular.module('DrScience', ['ngAudio']);
+angular.module('DrScience', ['ngAudio', 'ngMaterial']);
 
 angular.module('DrScience')
     .controller('MainController', ['$scope', 'ngAudio', function($scope, ngAudio) {
 
     var vm = this;
+
+    $scope.myValue = 80;
 
     var fpLink1 = angular.element(document.getElementById('fp-link-1'));
     fpLink1.on('mouseenter', function() {

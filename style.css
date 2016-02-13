@@ -15,6 +15,23 @@ a {
     float: left;
 }
 
+#audio-slider {
+    position: absolute;
+    width: 100vw;
+    bottom: 60px;
+}
+
+#audio-slider md-slider {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    background-color: RGBA(255, 184, 77, 0.8);
+    width: 40vw;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
 #social-media-toolbar {
     position: absolute;
     right: 10px;
@@ -35,6 +52,7 @@ a {
     bottom: 8vh;
     height: 80px;
     width: 80px;
+    z-index: 10;
 }
 
 #play-icon {
