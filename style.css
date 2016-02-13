@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    background-image: url('/img/bg.png');
+    background-image: url('img/bg.png');
     background-size: cover;
     margin: 0 auto;
     max-width: 90vh;
