@@ -5,15 +5,23 @@
     <title>DR.SCIENCE</title>
     <!-- <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css"> -->
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700' rel='stylesheet' type='text/css'></head>
 <body ng-app="DrScience">
     <div ng-controller="MainController">
         <div id="social-media-toolbar">
             <a href="https://www.facebook.com/drsciencefl/" target="_blank">
-                <img src="img/icon-fb.png" alt=""></li>
+                <img src="img/icon-fb.png" alt="">
             </a>
         </div>
+
+        <div id="audio-toolbar">
+            <div ng-click='audio.paused ? audio.play() : audio.pause()' id="play-icon">
+                <i class="fa flex" ng-class="{'fa-play-circle-o': audio.paused, 'fa-pause-circle-o': !audio.paused}"></i>
+            </div>
+        </div>
+
         <div class="container">
             <div class="layout-column">
                 <a href="http://youtu.be/wBdGkUik_sg" target="_blank">
@@ -46,6 +54,7 @@
 <script src="/bower_components/angular-messages/angular-messages.min.js"></script>
 <script src="/bower_components/angular-material/angular-material.min.js"></script> -->
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="lib/angular-audio/app/angular.audio.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>

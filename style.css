@@ -29,6 +29,22 @@ a {
     cursor: pointer;
 }
 
+#audio-toolbar {
+    position: absolute;
+    left: 25px;
+    bottom: 8vh;
+    height: 80px;
+    width: 80px;
+}
+
+#play-icon {
+    color:  RGBA(255, 184, 77, 1);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 60px;
+}
+
 .hover-color-1 {
     background-color: RGBA(255, 184, 77, 0.8);
     cursor: pointer;

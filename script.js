@@ -1,9 +1,9 @@
 'strict mode';
 
-angular.module('DrScience', []);
+angular.module('DrScience', ['ngAudio']);
 
 angular.module('DrScience')
-    .controller('MainController', ['$scope', function($scope) {
+    .controller('MainController', ['$scope', 'ngAudio', function($scope, ngAudio) {
 
     var vm = this;
 
@@ -14,6 +14,8 @@ angular.module('DrScience')
     fpLink1.on('mouseleave', function() {
         fpLink1.removeClass('hover-color-1');
     });
+
+    $scope.audio = ngAudio.load("audio/no-more.mp3"); // returns NgAudioObject
 
     var fpLink2 = angular.element(document.getElementById('fp-link-2'));
     fpLink2.on('mouseenter', function() {
