@@ -43,6 +43,7 @@ a {
     width: 50px;
     border-radius: 50%;
     font-size: 60px;
+    cursor: pointer;
 }
 
 .hover-color-1 {
