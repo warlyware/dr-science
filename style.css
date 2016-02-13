@@ -18,7 +18,18 @@ a {
 #audio-slider {
     position: absolute;
     width: 100vw;
-    bottom: 60px;
+    bottom: 50px;
+}
+
+#audio-slider .track-title {
+    font-size: 1.7em;
+    color: white;
+    background-color: RGBA(255, 184, 77, 0.8);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
 }
 
 #audio-slider md-slider {
