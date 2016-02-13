@@ -11,6 +11,24 @@ a {
     text-decoration: none;
 }
 
+.float {
+    float: left;
+}
+
+#social-media-toolbar {
+    position: absolute;
+    right: 10px;
+    top: 3vh;
+    height: 80px;
+    width: 80px;
+}
+
+#social-media-toolbar img {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
 .hover-color-1 {
     background-color: RGBA(255, 184, 77, 0.8);
     cursor: pointer;
